@@ -1,0 +1,16 @@
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\EscapeRoom2.exe
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\EscapeRoom2.deps.json
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\EscapeRoom2.runtimeconfig.json
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\EscapeRoom2.runtimeconfig.dev.json
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\EscapeRoom2.dll
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\ref\EscapeRoom2.dll
+D:\CSharp\EscapeRoom2\EscapeRoom2\bin\Debug\net5.0\EscapeRoom2.pdb
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.csproj.AssemblyReference.cache
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.AssemblyInfoInputs.cache
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.AssemblyInfo.cs
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.csproj.CoreCompileInputs.cache
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.dll
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\ref\EscapeRoom2.dll
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.pdb
+D:\CSharp\EscapeRoom2\EscapeRoom2\obj\Debug\net5.0\EscapeRoom2.genruntimeconfig.cache

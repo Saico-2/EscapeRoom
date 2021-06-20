@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "EscapeRoom2/1.0.0": {
+        "runtime": {
+          "EscapeRoom2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EscapeRoom2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
