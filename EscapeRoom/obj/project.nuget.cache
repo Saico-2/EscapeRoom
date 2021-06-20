@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aMk55xj/jUzPkpiLQ13+CN33a7t0Ac1MzqEu1qWyPeuHTBd5JKV6ncIw++8APEmqjTN7XI4BnwimRlkGG+O0hg==",
+  "dgSpecHash": "sZKfJvu6VP0JdtcL1ivjJrCvjaKP00XHdIL9+oon1yLAMVJ6/BX9dCyxOCpXUYeeLA15hDomCE89x2bmi9MdLQ==",
   "success": true,
-  "projectFilePath": "D:\\CSharp\\EscapeRoom2\\EscapeRoom2\\EscapeRoom.csproj",
+  "projectFilePath": "D:\\CSharp\\EscapeRoom\\EscapeRoom\\EscapeRoom.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharp\\EscapeRoom2\\EscapeRoom2\\EscapeRoom.csproj",
+      "projectUniqueName": "D:\\CSharp\\EscapeRoom\\EscapeRoom\\EscapeRoom.csproj",
       "projectName": "EscapeRoom",
-      "projectPath": "D:\\CSharp\\EscapeRoom2\\EscapeRoom2\\EscapeRoom.csproj",
+      "projectPath": "D:\\CSharp\\EscapeRoom\\EscapeRoom\\EscapeRoom.csproj",
       "packagesPath": "C:\\Users\\furri\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharp\\EscapeRoom2\\EscapeRoom2\\obj\\",
+      "outputPath": "D:\\CSharp\\EscapeRoom\\EscapeRoom\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\furri\\AppData\\Roaming\\NuGet\\NuGet.Config",

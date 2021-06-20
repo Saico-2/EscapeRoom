@@ -38,6 +38,7 @@ namespace EscapeRoom2
 
             Console.WriteLine($"{service.enterRoom()}");
 
+            // main game loop
             while (true)
             {
                 Console.Write("\n>> ");

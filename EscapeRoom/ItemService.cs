@@ -1,11 +1,16 @@
 ﻿using System.Collections.Generic;
-using System;
 
 namespace EscapeRoom2
 {
     class ItemService
     {
-        // location of player
+        // TODO:
+        // * implement multiple locations
+        // *** 2-dimensional grid of locations
+        // *** command "go" to move around rooms
+        // *** property for items or locations to specify where each item is located
+
+        // player's location
         static int playerRoom = 0;
 
         // descriptions of rooms when entering or looking around
@@ -106,8 +111,10 @@ namespace EscapeRoom2
             )
         };
 
+        // find item's location in list
         int ItemNameToId(string item)
         {
+            // find by comparing every item's name to name in command
             for (int i = 0; i < items.Count; i++)
             {
                 if (item == items[i].name)
@@ -123,22 +130,28 @@ namespace EscapeRoom2
             // description of room and items inside it
             if (item == "around")
             {
+                // concatenate all descriptions, starting with current room
                 string itemAll = $"{roomDesc[playerRoom]}\n";
                 for (int i = 0; i < items.Count; i++)
                 {
-                    itemAll += $"{items[i].descAround}\n"; // generic descriptions of items in room
+                    // only visible items, otherwise there'd just be an unnecessary newline
+                    if(items[i].descAround != null)
+                    {
+                        itemAll += $"{items[i].descAround}\n"; // generic descriptions of items in room
+                    }
                 }
-                itemAll = itemAll.Remove(itemAll.Length - 1); // remove unnecessary newlines
+                itemAll = itemAll.Remove(itemAll.Length - 1); // remove unnecessary newline
                 return itemAll;
             }
             // looking at a specific item
             else
             {
+                // find by comparing every item's name to name in command
                 for (int i = 0; i < items[i].name.Length; i++)
                 {
                     if (item == items[i].name)
                     {
-                        return $"{items[i].descLook} {items[i].descLookUsed[items[i].used]}"; // specific description, description of item's state
+                        return $"{items[i].descLook} {items[i].descLookUsed[items[i].used]}"; // specific description and description of item's state
                     }
                 }
                 return $"Item \"{item}\" not found.";
@@ -147,7 +160,7 @@ namespace EscapeRoom2
 
         string Use(string item, string usedOn = "")
         {
-            // get IDs of items
+            // get IDs of items so there's no need to do it multiple times for one item
             int itemA = ItemNameToId(item);
             int itemB = -2; // initially mark as invalid
             if (usedOn != "") { itemB = ItemNameToId(usedOn); } // if a second item is specified in command, find its ID
@@ -155,14 +168,12 @@ namespace EscapeRoom2
             // for cleaner code
             // initially mark as invalid item
             string useDesc = "";
-            //string itemUsedBy = "";
             string itemUsedOn = "";
 
             // if valid item, assign proper values
             if (itemA >= 0)
             {
                 useDesc = items[itemA].descUse[items[itemA].used]; // item useable if NOT null
-                //itemUsedBy = itemCanUsedBy[itemA]; // item useable by itself when null, useable with another item if NOT null
                 itemUsedOn = items[itemA].canUseOn;  // same as above
             }
 
@@ -204,7 +215,7 @@ namespace EscapeRoom2
                 }
             }
 
-            // at least one item does not exist
+            // at least one item in command does not exist
             else if (ItemNameToId(item) == -1)
             {
                 return $"Item \"{item}\" not found.";
@@ -231,6 +242,7 @@ namespace EscapeRoom2
                     {
                         return LookAt(com[1]);
                     }
+                    // if player doesn't specify what they're looking at
                     catch
                     {
                         return $"You look at nothing in particular.";
@@ -238,9 +250,9 @@ namespace EscapeRoom2
 
                 case "u":
                 case "use":
-                    // if using one item on another
                     try
                     {
+                        // if using one item on another
                         if (com.Length > 2)
                         {
                             if (com[2] == "on")
@@ -252,12 +264,13 @@ namespace EscapeRoom2
                                 return "Invalid command.";
                             }
                         }
-                        // if just using an item
+                        // if using an item by itself
                         else
                         {
                             return Use(com[1]);
                         }
                     }
+                    // if player doesn't specify what they're using
                     catch
                     {
                         return "You use. That's it, you just use. I don't know how that works, don't ask me.";
