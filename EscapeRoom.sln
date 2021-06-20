@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.31402.337
+VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscapeRoom", "EscapeRoom2\EscapeRoom.csproj", "{062E9C48-E438-4FC3-B0F8-71A4DA0EB0AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EscapeRoom", "EscapeRoom\EscapeRoom.csproj", "{EC4E7BCF-6862-45D9-A516-30B5A373D03B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{062E9C48-E438-4FC3-B0F8-71A4DA0EB0AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{062E9C48-E438-4FC3-B0F8-71A4DA0EB0AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{062E9C48-E438-4FC3-B0F8-71A4DA0EB0AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{062E9C48-E438-4FC3-B0F8-71A4DA0EB0AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4E7BCF-6862-45D9-A516-30B5A373D03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4E7BCF-6862-45D9-A516-30B5A373D03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4E7BCF-6862-45D9-A516-30B5A373D03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4E7BCF-6862-45D9-A516-30B5A373D03B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {77C7B583-5209-4325-B90B-8C1C45773E4E}
+		SolutionGuid = {3EFBA4C5-287B-4251-A6FE-400B4C6D3685}
 	EndGlobalSection
 EndGlobal
