@@ -5,10 +5,16 @@ namespace EscapeRoom2
     class ItemService
     {
         // TODO:
+
         // * implement multiple locations
         // *** 2-dimensional grid of locations
         // *** command "go" to move around rooms
         // *** property for items or locations to specify where each item is located
+
+        // * implement inventory
+        // *** move items between locations
+        // *** command "take" to put items into inventory
+        // *** command "inventory" to see items in inventory
 
         // player's location
         static int playerRoom = 0;
