@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EscapeRoom2
+namespace EscapeRoom
 {
     class Program
     {
@@ -8,10 +8,14 @@ namespace EscapeRoom2
         {
             ItemService service = new ItemService();
 
+
+            // ------------------------------------------------------------------------
+            // WELCOME MESSAGE
+            // ------------------------------------------------------------------------
+
             Console.WriteLine("Welcome to a generic text-based puzzle adventure game!\n");
 
             Console.WriteLine("To look at something, type \"lookat\", \"look\", or simply \"l\" and the name of an item.");
-            Console.WriteLine("Use simple one-word names! Even if you find a \"fancy blue necklace\", just type \"necklace\".");
             Console.WriteLine("You can also type \"look around\" to, you guessed it, look around the room!");
             Console.WriteLine("Ex.: \"look around\", \"l photo\"\n");
 
@@ -23,12 +27,13 @@ namespace EscapeRoom2
             //Console.WriteLine("Available directions are \"west\", \"east\", \"north\", \"south\", \"up\", \"down\".");
             //Console.WriteLine("Ex.: \"go west\"\n");
 
-            //Console.WriteLine("To pick up an item, type \"take\", \"t\", \"pickup\" or \"p\" and an item.");
-            //Console.WriteLine("Some items can only be used if you're holding them first!");
-            //Console.WriteLine("Ex.:\"take note\", \"p note\"\n");
+            Console.WriteLine("To put an item into your inventory, type \"take\", \"t\", \"pickup\" or \"p\" and an item.");
+            Console.WriteLine("Not all items can be taken, but those that can will always have an important use!");
+            Console.WriteLine("Ex.:\"take note\", \"p note\"\n");
 
-            //Console.WriteLine("To check what items you're holding, type \"inventory\", \"inv\" or \"i\".\n");
+            Console.WriteLine("To see the contents of your inventory, type \"inventory\", \"inv\" or \"i\".\n");
 
+            Console.WriteLine("Use simple one-word names! Even if you find a \"fancy blue necklace\", just type \"necklace\".");
             Console.WriteLine("Don't use uppercase letters or else the commands won't work.\n");
 
             Console.Write("Press Enter to begin!");
@@ -38,7 +43,9 @@ namespace EscapeRoom2
 
             Console.WriteLine($"{service.enterRoom()}");
 
-            // main game loop
+            // ------------------------------------------------------------------------
+            // MAIN GAME LOOP
+            // ------------------------------------------------------------------------
             while (true)
             {
                 Console.Write("\n>> ");
